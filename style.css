@@ -105,6 +105,11 @@ header > div {
 
   }
 }
+
+.icon {
+  width: 40px;
+}
+
 .header-footer {
   display: flex;
   flex-direction: column;
@@ -219,6 +224,10 @@ header > div {
   .hori-line {
     width: 100%;
   }
+
+.icon {
+  width: 20px;
+}
 /* .header-lines {
   display: flex;
   gap: 10px;
