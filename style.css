@@ -8,10 +8,11 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  overflow-x:visible;
+  overflow-x: visible;
 }
 
-body, html {
+body,
+html {
   background-color: var(--main-bg);
   min-height: 100vh;
 }
@@ -21,26 +22,24 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 nav > a {
   font-size: larger;
 }
 nav > a:last-child {
-  border:1px solid white;
+  border: 1px solid white;
   padding: 5px 20px;
 }
 .logo {
   font-size: xx-large;
   margin-bottom: 20vh;
-  
 }
 
 header {
   width: 100%;
   display: flex;
   min-height: 100%;
-  overflow-x:hidden ;
+  overflow-x: hidden;
 }
 .left-header {
   display: flex;
@@ -83,7 +82,7 @@ header > div {
   min-width: 30%;
 }
 .button-group > button:first-of-type {
-  color:black;
+  color: black;
   background-color: white;
 }
 
@@ -93,16 +92,16 @@ header > div {
 .line {
   width: 30%;
   height: 2px;
-  background-color: white; 
+  background-color: white;
   margin: 0 10px;
 }
 .header-footer > div {
   display: flex;
   align-items: center;
   gap: 15px;
-  p,a {
+  p,
+  a {
     font-size: larger;
-
   }
 }
 
@@ -122,12 +121,12 @@ header > div {
   display: flex;
   gap: 20px;
   min-height: 100%;
-  padding-left:20%;
+  padding-left: 20%;
 }
 .header-lines > div {
   background-color: white;
   width: 35px;
-  height: 400px; 
+  height: 400px;
   transform: rotate(15deg) scaleY(0);
   transform-origin: bottom;
 }
@@ -144,8 +143,98 @@ header > div {
   margin-top: 35vh;
 }
 
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-us > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 0;
+}
+
+.about-us-text {
+  font-size: 2.5rem;
+}
+
+.about-us-long-text:first-of-type {
+  color: #bfbfbf;
+  font-size: 1.5rem;
+}
+.about-us-long-text-2 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.discover-more {
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: large;
+  padding: 5px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.arrow-icon {
+  font-size: xx-large;
+  color: black;
+}
+
+.about-us-div-2 {
+  display: flex;
+  flex-direction: column;
+}
+.lamp-container {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+.lamp-icon {
+  margin-left: -20px;
+}
+.about-us-list {
+  margin-left: 20px;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+}
+.about-us-list li {
+  list-style: none;
+}
+
+.about-us-list li::before {
+  content: "⬤";
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.two-boxes {
+  position: relative;
+  width: 321px;
+  height: 361px;
+  margin-right: 100px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.two-boxes::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
 @keyframes slideToLeft {
-  0%{
+  0% {
     transform: translateX(100vw);
   }
   100% {
@@ -161,9 +250,9 @@ header > div {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   header {
-  flex-direction: column;
+    flex-direction: column;
   }
   header > div {
     max-width: 100%;
@@ -179,7 +268,7 @@ header > div {
     text-align: center;
   }
   .devdou {
-    font-size: 4.2rem !important; 
+    font-size: 4.2rem !important;
   }
   .button-group {
     justify-content: center;
@@ -190,7 +279,6 @@ header > div {
     border: 1px solid white;
     font-size: 1rem;
     padding: 10px 10px;
-
   }
   .line {
     width: 20%;
@@ -210,7 +298,8 @@ header > div {
   }
   .right-header {
     background-color: black;
-    height: inherit;
+    padding-bottom: 200px;
+    min-height: 50%;
   }
   .header-footer {
     display: flex;
@@ -225,28 +314,81 @@ header > div {
     width: 100%;
   }
 
-.icon {
-  width: 20px;
-}
-/* .header-lines {
-  display: flex;
-  gap: 10px;
-}
-.header-lines > div {
-  background-color: white;
-  height: 300px;
-  width: 30px;
-  transform: rotate(15deg);
-}
-.header-line:nth-of-type(1) {
-}
-.header-line:nth-of-type(2) {
-
-}
-.header-line:nth-of-type(3) {
-
-} */
-
+  .icon {
+    width: 20px;
+  }
+  .header-lines > div {
+    background-color: white;
+    height: 300px;
+    width: 30px;
+    transform: rotate(15deg);
+  }
+  .about-us {
+    overflow-x: hidden;
+  }
+  .about-us > div{
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-text {
+    font-size: 4rem;
+    margin-bottom: 70px;
+  }
+  .about-us-long-text:first-of-type {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .about-us-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover-more {
+    width: 60%;
+    gap: 10px;
+    font-size:1rem;
+    padding: 10px 0px;
+    font-size: large;
+  }
+  .arrow-icon {
+    font-size: xx-large;
+  }
+  .about-us-div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .about-us-list {
+    gap: 30px;
+    li {
+      font-size: medium;
+    }
+  }
+  .about-us-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .two-boxes-container {
+    position: relative;
+  }
+  .two-boxes {
+    position: absolute;
+    width: 140px;
+    height: 170px;
+    left: 70px;
+    top: -150px;
+  }
+  .two-boxes::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background: white;
+  }
 }
 @media (min-width: 1920px) {
   header > div {
@@ -254,7 +396,7 @@ header > div {
     overflow-y: hidden;
   }
   .main-text > p {
-    font-size:4rem ;
+    font-size: 4rem;
   }
   .devdou {
     font-size: 8rem !important;
@@ -268,4 +410,48 @@ header > div {
   .header-footer {
     font-size: 2rem;
   }
+  .about-us > div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0;
+  }
+  .about-us-text {
+    font-size: 4.5rem;
+  }
+  .about-us-long-text:first-of-type {
+    font-size: 1.8rem;
+    margin-left: 150px;
+
+  }
+  .about-us-long-text-2 {
+    font-size: 1.7rem;
+  }
+  .discover-more {
+    font-size: x-large;
+    padding: 0px 50px;
+    margin-left: 150px;
+
+  }
+  .arrow-icon {
+    font-size: 3.5rem;
+  }
+  .lamp-container {
+    font-size:3rem;
+    margin-right: 600px;
+  }
+  .lamp-icon {
+    width: 90px;
+  }
+  .about-us-list {
+    font-size: xx-large;
+  }
+  .two-boxes-container {
+    position: relative;
+  }
+  .two-boxes {
+    position: absolute;
+    left: -500px;
+    top: 0px;
+  }
+ 
 }

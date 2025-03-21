@@ -1,59 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>DevDou portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
-        <div class="left-header">
-            <p class="logo">Portfolio</p>
-                <div class="main-text">
-                    <p>Hello there,<br>we are</p>
-                    <p class="devdou"><strong>DevDou</strong></p>
-                    <p>full-stack web developers</p>
-                    <div class="button-group">
-                        <button>Get a quote</button>
-                        <button>See Work</button>
-                    </div>
-                </div>
-                <div class="header-footer">
-                    <hr class="hori-line">
-                    <div>
-                        <p>let's connect!</p>
-                        <div class="line"></div>
-                        <a href="#"><img class="icon" src="svgs/github-brands.svg" alt="icon">
-                        </a>
-                        <a href="#"><img class="icon" src="svgs/linkedin-brands.svg" alt="icon">
-                        </a>
-                        <a href="#"><img class="icon" src="svgs/envelope-solid.svg" alt="icon">
-                        </a>
-                    </div>
-                </div>
-
+      <div class="left-header">
+        <p class="logo">Portfolio</p>
+        <div class="main-text">
+          <p>Hello there,<br />we are</p>
+          <p class="devdou"><strong>DevDou</strong></p>
+          <p>full-stack web developers</p>
+          <div class="button-group">
+            <button>Get a quote</button>
+            <button>See Work</button>
+          </div>
         </div>
-        <div class="right-header">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Blog</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <div class="header-lines">
-                <div class="header-line"></div>
-                <div class="header-line"></div>
-                <div class="header-line"></div>
-
-            </div>
+        <div class="header-footer">
+          <hr class="hori-line" />
+          <div>
+            <p>let's connect!</p>
+            <div class="line"></div>
+            <a href="#"
+              ><img class="icon" src="svgs/github-brands.svg" alt="icon" />
+            </a>
+            <a href="#"
+              ><img class="icon" src="svgs/linkedin-brands.svg" alt="icon" />
+            </a>
+            <a href="#"
+              ><img class="icon" src="svgs/envelope-solid.svg" alt="icon" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="right-header">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="header-lines">
+          <div class="header-line"></div>
+          <div class="header-line"></div>
+          <div class="header-line"></div>
+        </div>
+      </div>
     </header>
+    <div style="border-bottom: 1px solid white; height: 2px"></div>
+
+    <div class="about-us">
+      <div>
+        <p class="about-us-text">About us</p>
+        <div class="about-us-div">
+          <p class="about-us-long-text">
+            We are DevDou, a web developer agency based <br />
+            in <span>Egypt</span>. We create modern, visually appealing <br />
+            websites in a short period of time. <br />
+            Whether it’s an e-commerce store, a personal website, <br />
+            or even a personal blog, we got you covered!
+          </p>
+          <button class="discover-more">
+            Discover More
+            <p class="arrow-icon">⟶</p>
+          </button>
+        </div>
+      </div>
+      <div class="about-us-content">
+        <div class="about-us-div-2">
+          <div class="lamp-container">
+            <img class="lamp-icon" src="svgs/electric-lamp.svg" alt="" />
+            <p>What can we do for you</p>
+          </div>
+          <p style="color: #8d8d8d" class="about-us-long-text-2">
+            Deliver faster, better products that your users will love. <br />
+            Here are the services we provide:
+          </p>
+          <ul class="about-us-list">
+            <li>Web design</li>
+            <li>Front-end development</li>
+            <li>Back-end development</li>
+            <li>Full-stack development</li>
+          </ul>
+        </div>
+        <div class="two-boxes-container">
+            <div class="two-boxes"></div>
+        </div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
     <!-- <script src="https://kit.fontawesome.com/0dfa026cfb.js" crossorigin="anonymous"></script> -->
-</body>
+  </body>
 </html>
