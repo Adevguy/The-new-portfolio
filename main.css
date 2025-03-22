@@ -1,3 +1,4 @@
+
 :root {
   --main-bg: #0c0c0c;
   --main-font: "Inter";
@@ -152,20 +153,24 @@ header > div {
 .about-us > div {
   display: flex;
   justify-content: space-around;
-  padding: 150px 0;
+  padding: 200px 40px;
+
 }
 
 .about-us-text {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .about-us-long-text:first-of-type {
   color: #bfbfbf;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .about-us-long-text-2 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-bottom: 30px;
+}
+.about-us-text-2 {
+  font-size: 2rem;
 }
 .discover-more {
   display: flex;
@@ -200,7 +205,7 @@ header > div {
 }
 .about-us-list {
   margin-left: 20px;
-  font-size: larger;
+  font-size: x-large;
   display: flex;
   flex-direction: column;
 }
@@ -232,6 +237,82 @@ header > div {
   height: 100%;
   background: white;
 }
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+.skills-header {
+  display: flex;
+  flex-direction: column;
+}
+.skills-header > p:nth-of-type(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  margin-left: 100px;
+
+}
+.skills-header > p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+
+}
+.skills-header > p:nth-of-type(2)::before {
+  content: "⬤";
+  font-size: 1rem;
+  margin-right: 10px;
+}
+.skills-cards-container {
+  display: flex;
+  gap: 30px;
+  width: 100% !important;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  border-radius: 20px;
+  max-width: 393px;
+  margin-top: 100px;
+  padding: 15px 10px;
+}
+.card-header {
+  font-size: xx-large;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.card-description {
+  font-size: x-large;
+  color: #C3C3C3;
+  margin-bottom: 50px;
+}
+.card-img {
+  width: 75px;
+  height: 75px;
+}
+.card-tech {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+}
+
+.card-tech-box {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  background-color: var(--main-bg);
+  border-radius: 7px;
+  min-width: 130px;
+  padding: 8px 10px;
+}
+.card-tech-box img {
+  width: 30px;
+  height: 30px;
+}
 
 @keyframes slideToLeft {
   0% {
@@ -250,146 +331,22 @@ header > div {
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-  header > div {
-    max-width: 100%;
-  }
-  .logo {
-    margin-bottom: 100px;
-  }
-  nav {
-    display: none;
-  }
-  .main-text > p {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .devdou {
-    font-size: 4.2rem !important;
-  }
-  .button-group {
-    justify-content: center;
-    min-width: 100%;
-    margin-left: 15px;
-  }
-  .button-group > button {
-    border: 1px solid white;
-    font-size: 1rem;
-    padding: 10px 10px;
-  }
-  .line {
-    width: 20%;
-    margin: 0 2px;
-  }
-  .header-footer > div {
-    display: flex;
-    width: 100%;
+@media (max-width:1271px) {
+  .skills {
+    padding: 450px 0px;
     align-items: center;
-    gap: 4px;
-    p {
-      font-size: large;
-    }
-    a {
-      font-size: larger;
-    }
-  }
-  .right-header {
-    background-color: black;
-    padding-bottom: 200px;
-    min-height: 50%;
-  }
-  .header-footer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    font-size: large;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  .hori-line {
-    width: 100%;
-  }
-
-  .icon {
-    width: 20px;
-  }
-  .header-lines > div {
-    background-color: white;
-    height: 300px;
-    width: 30px;
-    transform: rotate(15deg);
-  }
-  .about-us {
     overflow-x: hidden;
   }
-  .about-us > div{
-    flex-direction:column ;
-    align-items: center;
-    justify-content: center;
-  }
-  .about-us-text {
-    font-size: 4rem;
-    margin-bottom: 70px;
-  }
-  .about-us-long-text:first-of-type {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .about-us-div {
-    display: flex;
+  .skills-cards-container {
     flex-direction: column;
     align-items: center;
+    gap: 5px;
   }
-  .discover-more {
-    width: 60%;
-    gap: 10px;
-    font-size:1rem;
-    padding: 10px 0px;
-    font-size: large;
-  }
-  .arrow-icon {
-    font-size: xx-large;
-  }
-  .about-us-div-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-  }
-  .about-us-list {
-    gap: 30px;
-    li {
-      font-size: medium;
-    }
-  }
-  .about-us-content {
-    display: flex;
-    flex-direction: row;
-  }
-  .two-boxes-container {
-    position: relative;
-  }
-  .two-boxes {
-    position: absolute;
-    width: 140px;
-    height: 170px;
-    left: 70px;
-    top: -150px;
-  }
-  .two-boxes::before {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    width: 100%;
-    height: 100%;
-    background: white;
+  .card {
+    margin-top: 50px;
   }
 }
+
 @media (min-width: 1920px) {
   header > div {
     padding: 50px 100px;
@@ -412,7 +369,7 @@ header > div {
   }
   .about-us > div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 150px 0;
   }
   .about-us-text {
@@ -421,7 +378,6 @@ header > div {
   .about-us-long-text:first-of-type {
     font-size: 1.8rem;
     margin-left: 150px;
-
   }
   .about-us-long-text-2 {
     font-size: 1.7rem;
@@ -430,13 +386,12 @@ header > div {
     font-size: x-large;
     padding: 0px 50px;
     margin-left: 150px;
-
   }
   .arrow-icon {
     font-size: 3.5rem;
   }
   .lamp-container {
-    font-size:3rem;
+    font-size: 3rem;
     margin-right: 600px;
   }
   .lamp-icon {
@@ -453,5 +408,23 @@ header > div {
     left: -500px;
     top: 0px;
   }
- 
+
+  .card-header {
+    font-size:45px;
+    width: 543px;
+  }
+  .card {
+    padding: 15px 40px;
+  }
+  .card-tech {
+    gap: 30px;
+  }
+  .card-tech-box {
+    gap: 20px;
+    font-size: 30px;
+  }
+  .card-tech-box img {
+    width: 45px;
+    height: 45px;
+  }
 }

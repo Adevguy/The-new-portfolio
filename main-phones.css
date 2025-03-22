@@ -1,0 +1,211 @@
+@media (max-width: 919px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .about-us > div {
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0;
+  }
+
+  .about-us-text {
+    font-size: 2.5rem;
+  }
+
+  .about-us-long-text:first-of-type {
+    color: #bfbfbf;
+    font-size: 1.5rem;
+  }
+  .about-us-long-text-2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .discover-more {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: large;
+    padding: 5px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: white;
+  }
+
+  .arrow-icon {
+    font-size: xx-large;
+    color: black;
+  }
+
+  .about-us-div-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .lamp-container {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+  }
+  .lamp-icon {
+    margin-left: -20px;
+  }
+  .about-us-list {
+    margin-left: 20px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-list li {
+    list-style: none;
+  }
+
+  .about-us-list li::before {
+    content: "⬤";
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  header {
+    flex-direction: column;
+  }
+  header > div {
+    max-width: 100%;
+  }
+  .logo {
+    margin-bottom: 100px;
+  }
+  nav {
+    display: none;
+  }
+  .main-text > p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .devdou {
+    font-size: 4.2rem !important;
+  }
+  .button-group {
+    justify-content: center;
+    min-width: 100%;
+    margin-left: 15px;
+  }
+  .button-group > button {
+    border: 1px solid white;
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+  .line {
+    width: 20%;
+    margin: 0 2px;
+  }
+  .header-footer > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+    p {
+      font-size: large;
+    }
+    a {
+      font-size: larger;
+    }
+  }
+  .right-header {
+    background-color: black;
+    padding-bottom: 200px;
+    min-height: 50%;
+  }
+  .header-footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .hori-line {
+    width: 100%;
+  }
+
+  .icon {
+    width: 20px;
+  }
+  .header-lines > div {
+    background-color: white;
+    height: 300px;
+    width: 30px;
+    transform: rotate(15deg);
+  }
+  .about-us {
+    overflow-x: hidden;
+  }
+  .about-us > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-text {
+    font-size: 4rem;
+    margin-bottom: 70px;
+  }
+  .about-us-long-text:first-of-type {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .about-us-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover-more {
+    width: 60%;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 10px 0px;
+    font-size: large;
+  }
+  .arrow-icon {
+    font-size: xx-large;
+  }
+  .about-us-div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .about-us-list {
+    gap: 30px;
+    li {
+      font-size: medium;
+    }
+  }
+  .about-us-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .two-boxes-container {
+    position: relative;
+  }
+  .two-boxes {
+    position: absolute;
+    width: 140px;
+    height: 170px;
+    left: 70px;
+    top: -150px;
+  }
+  .two-boxes::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background: white;
+  }
+
+}
