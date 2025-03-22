@@ -241,6 +241,7 @@ header > div {
   display: flex;
   flex-direction: column;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 .skills-header {
   display: flex;
@@ -344,6 +345,7 @@ header > div {
   }
   .card {
     margin-top: 50px;
+    width: 50%;
   }
 }
 
