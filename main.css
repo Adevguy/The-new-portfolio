@@ -9,7 +9,8 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  overflow-x: visible;
+  list-style: none;
+  overflow-x: hidden;
 }
 
 body,
@@ -277,7 +278,7 @@ header > div {
   flex-direction: column;
   background-color: #131313;
   border-radius: 20px;
-  max-width: 393px;
+  width: 293px;
   margin-top: 100px;
   padding: 15px 25px;
 }
@@ -312,6 +313,7 @@ header > div {
   background-color: var(--main-bg);
   border-radius: 7px;
   min-width: 130px;
+  cursor: pointer;
   padding: 8px 10px;
 }
 .card-tech-box img {
@@ -429,10 +431,9 @@ header > div {
 
 
 .contact-main{
-  font-weight: 200 !important;
   font-family: var(--main-font);
   h1{
-    font-weight: 100 !important;
+    font-weight: 400 !important;
     font-size: 48px !important;
   }
   p{
@@ -481,24 +482,26 @@ header > div {
 .form-container{
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 20px;
+  padding: 10px;
   input{
-    width: 500px;
+    width:300px;
     padding: 10px;
     border-radius: 10px;
     border: none;
     background-color:#131313 ;
   }
-  #message{
-    min-height: 131px;
-    &::placeholder{
-      position: absolute;
-      top: 0;
-      margin-top: 10px;
-    }
+
+}
+#message{
+  min-height: 131px;
+  &::placeholder{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
   }
 }
-
 #contact-button{
   max-width: 200px;
   color: black;
@@ -509,6 +512,8 @@ header > div {
 }
 
 .social-icons{
+  display: flex;
+  gap: 10px;
   img{
     width: 25px;
   }
@@ -516,26 +521,36 @@ header > div {
 
 footer{
   margin-top: 50px;
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 50px;
 }
 
 .footer-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .footer-bottom{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-
+.footer-hr {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: #525252;
+}
 .footer-text{
   h2{
   font-size: 3rem;
   font-weight: 500 !important;
   }
 }
-
+.gray {
+  color: #7D7D7D;
+}
 @keyframes slideToLeft {
   0% {
     transform: translateX(100vw);
@@ -638,6 +653,8 @@ footer{
   }
   .card {
     padding: 15px 40px;
+    width: 593px;
+
   }
   .card-tech {
     gap: 30px;
@@ -649,112 +666,5 @@ footer{
   .card-tech-box img {
     width: 45px;
     height: 45px;
-  }
-}
-@media (max-width: 768px) {
-  .skills {
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  .skills-header > p:nth-of-type(1) {
-    font-size: 32px;
-    margin-left: 20px;
-  }
-
-  .skills-header > p:nth-of-type(2) {
-    font-size: 18px;
-    margin-left: 20px;
-  }
-
-  .skills-cards-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .card {
-    min-width: 300px; 
-    min-height: 350px;
-    margin-top: 30px;
-    padding: 12px 20px;
-  }
-
-  .card-header {
-    font-size: 22px;
-  }
-
-  .card-description {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .card-img {
-    width: 60px;
-    height: 60px;
-    margin-left: 10px;
-  }
-
-  .card-tech {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px;
-  }
-
-  .card-tech-box {
-    font-size: 18px;
-    padding: 6px 10px;
-  }
-
-  .card-tech-box img {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .works-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .work-image {
-    height: 150px;
-  }
-
-  .work-title {
-    font-size: 20px;
-  }
-
-  .work-description {
-    font-size: 14px;
-  }
-
-  .tech-icons {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 8px;        
-  }
-  
-  .tech {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    background: #0c0c0c;
-    padding: 6px 10px;
-    border-radius: 6px;
-    justify-content: center;
-  }
-
-  .contact-container{
-    flex-direction: column;
-    .form-text{
-      margin-bottom: 40px;
-      letter-spacing: 2px !important;
-    }
-    input{
-      width: 300px;
-    }
   }
 }

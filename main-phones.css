@@ -1,4 +1,106 @@
-@media (max-width: 919px) {
+@media (max-width: 910px) {
+  .skills {
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .skills-header > p:nth-of-type(1) {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  .skills-header > p:nth-of-type(2) {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .skills-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 300px; 
+    min-height: 350px;
+    margin-top: 30px;
+    padding: 12px 20px;
+  }
+
+  .card-header {
+    font-size: 22px;
+  }
+
+  .card-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .card-img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+  }
+
+  .card-tech {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+  }
+
+  .card-tech-box {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+  .card-tech-box img {
+    width: 25px;
+    height: 25px;
+  }
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-image {
+    height: 150px;
+  }
+
+  .work-title {
+    font-size: 20px;
+  }
+
+  .work-description {
+    font-size: 14px;
+  }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px;        
+  }
+  
+  .tech {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    background: #0c0c0c;
+    padding: 6px 10px;
+    border-radius: 6px;
+    justify-content: center;
+  }
+
+  .contact-container{
+    flex-direction: column;
+    .form-text{
+      margin-bottom: 40px;
+      letter-spacing: 2px !important;
+    }
+    input{
+      width: 300px;
+    }
+  }
   .about-us {
     display: flex;
     flex-direction: column;
@@ -98,6 +200,13 @@
     font-size: 1rem;
     padding: 10px 10px;
   }
+  footer {
+    overflow-x: hidden;
+
+  }
+  .footer-text > h2{
+    font-size:2rem;
+  }
   .line {
     width: 20%;
     margin: 0 2px;
@@ -134,6 +243,11 @@
 
   .icon {
     width: 20px;
+  }
+  .header-lines {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
   }
   .header-lines > div {
     background-color: white;
