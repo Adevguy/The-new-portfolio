@@ -10,13 +10,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="main-phones.css">
+    <link rel="stylesheet" href="main-phones.css" />
     <title>DevDou portfolio</title>
   </head>
   <body>
     <header>
       <div class="left-header">
-        <p class="logo">Portfolio</p>
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="svgs/DEVDOU.png"
+            loading="lazy"
+            alt="Devdou logo"
+          />
+
+          <div class="wrapper">
+            <input type="checkbox" id="fab-toggle" />
+            <label class="fab" for="fab-toggle"></label>
+            <div class="fac">
+              <a href="#"> About </a>
+              <a href="#"> Blog </a>
+              <a href="#"> Contact </a>
+            </div>
+          </div>
+        </div>
         <div class="main-text">
           <p>Hello there,<br />we are</p>
           <p class="devdou"><strong>DevDou</strong></p>
@@ -105,8 +122,8 @@
 
     <div class="skills">
       <div class="skills-header">
-        <p style="margin-left: 5%;">Technologies & Tools</p>
-        <p style="margin-left: 5%;">Full-stack web development tech</p>
+        <p style="margin-left: 5%">Technologies & Tools</p>
+        <p style="margin-left: 5%">Full-stack web development tech</p>
       </div>
       <div class="skills-cards-container">
         <div class="card">
@@ -189,107 +206,136 @@
       </h2>
       <div class="works-grid">
         <div class="work-card">
-          <img src="pass-1.png" alt="PassSecure Project" class="work-image">
+          <img src="pass-1.png" alt="PassSecure Project" class="work-image" />
           <div class="work-info">
             <h3 class="work-title">PassSecure</h3>
             <p class="work-description">
-              PassSecure is a fully-fledged password manager and generator with top-tier security to keep all your passwords in one place!
+              PassSecure is a fully-fledged password manager and generator with
+              top-tier security to keep all your passwords in one place!
             </p>
-            <a href="#" class="visit-website">Visit website<img src="svgs/arrow-up-right-from-square-solid (1).svg" class="visit-icon"></a>
+            <a href="#" class="visit-website"
+              >Visit website<img
+                src="svgs/arrow-up-right-from-square-solid (1).svg"
+                class="visit-icon"
+            /></a>
             <div class="tech-icons">
-              <span class="tech"><img src="svgs/html.svg" alt="HTML">HTML</span>
-              <span class="tech"><img src="svgs/bootstrap.svg" alt="Bootstrap">Bootstrap</span>
-              <span class="tech"><img src="svgs/node.svg" alt="Node.js">NodeJs</span>
-              <span class="tech"><img src="svgs/mongodb.svg" alt="MongoDB">MongoDB</span>
+              <span class="tech"
+                ><img src="svgs/html.svg" alt="HTML" />HTML</span
+              >
+              <span class="tech"
+                ><img src="svgs/bootstrap.svg" alt="Bootstrap" />Bootstrap</span
+              >
+              <span class="tech"
+                ><img src="svgs/node.svg" alt="Node.js" />NodeJs</span
+              >
+              <span class="tech"
+                ><img src="svgs/mongodb.svg" alt="MongoDB" />MongoDB</span
+              >
             </div>
           </div>
         </div>
-    
+
         <div class="work-card">
-          <img src="momentum.png" alt="Momentum Project" class="work-image">
+          <img src="momentum.png" alt="Momentum Project" class="work-image" />
           <div class="work-info">
             <h3 class="work-title">Momentum</h3>
             <p class="work-description">
-              Momentum is a template shit project I stole from webflow 
+              Momentum is a template shit project I stole from webflow
               showcasing our amazing webflow skills and shit.
             </p>
-            <a href="#" class="visit-website">Visit website <img src="svgs/arrow-up-right-from-square-solid (1).svg" class="visit-icon"></a>
+            <a href="#" class="visit-website"
+              >Visit website
+              <img
+                src="svgs/arrow-up-right-from-square-solid (1).svg"
+                class="visit-icon"
+            /></a>
             <div class="tech-icons">
-              <span class="tech"><img src="svgs/webflow.svg" alt="Webflow">Webflow</span>
+              <span class="tech"
+                ><img src="svgs/webflow.svg" alt="Webflow" />Webflow</span
+              >
             </div>
           </div>
         </div>
-    
+
         <div class="work-card">
-          <img src="QuickBite.PNG" alt="Delivery Project" class="work-image">
+          <img src="QuickBite.PNG" alt="Delivery Project" class="work-image" />
           <div class="work-info">
             <h3 class="work-title">Quick Delivery</h3>
             <p class="work-description">
               A fast and efficient food ordering experience with a modern UI.
             </p>
-            <a href="#" class="visit-website">visit website<img src="svgs/arrow-up-right-from-square-solid (1).svg" class="visit-icon"></a>
+            <a href="#" class="visit-website"
+              >visit website<img
+                src="svgs/arrow-up-right-from-square-solid (1).svg"
+                class="visit-icon"
+            /></a>
             <div class="tech-icons">
-              <span class="tech"><img src="svgs/webflow.svg" alt="TrustPilot">Webflow</span>
+              <span class="tech"
+                ><img src="svgs/webflow.svg" alt="TrustPilot" />Webflow</span
+              >
             </div>
           </div>
         </div>
-    
+
         <div class="work-card empty"></div>
       </div>
     </section>
-    
-      <div class="contact-container">
+
+    <div class="contact-container">
       <div class="contact-text">
         <div class="contact-main">
           <h1>Let's chat.</h1>
-          <h1>Tell us about your <br>project</h1>
+          <h1>Tell us about your <br />project</h1>
           <p>let’s create something together</p>
-          <hr>
+          <hr />
         </div>
         <div class="mail-container">
-        <div class="circle-2"><img src="svgs/email-svgrepo-com.svg" alt=""></div>
-        <h2>Mail us at <br> DevDou180@gmail.com</h2>
+          <div class="circle-2">
+            <img src="svgs/email-svgrepo-com.svg" alt="" />
+          </div>
+          <h2>
+            Mail us at <br />
+            DevDou180@gmail.com
+          </h2>
+        </div>
       </div>
-    </div>
       <div class="contact-form">
         <h2 class="form-text">Send us a message!</h2>
         <div class="form-container">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email address">
-          <input type="text" placeholder="Your message" id="message">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email address" />
+          <input type="text" placeholder="Your message" id="message" />
           <button id="contact-button">Send message</button>
         </div>
       </div>
     </div>
-    <hr>
-      <footer>
-        <div class="footer-content">
-          <div class="footer-text">
-            <h2>DevDou</h2>
-          </div>
-          <div class="social-icons">
-            <a href="#"><img src="svgs/github-brands.svg" alt="GitHub"></a>
-            <a href="#"><img src="svgs/linkedin-brands.svg" alt="LinkedIn"></a>
-            <a href="#"><img src="svgs/email-svgrepo-com.svg" alt="Email"></a>
-          </div>
+    <hr />
+    <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          <h2>DevDou</h2>
         </div>
-    
-        <div class="footer-hr">
+        <div class="social-icons">
+          <a href="#"><img src="svgs/github-brands.svg" alt="GitHub" /></a>
+          <a href="#"><img src="svgs/linkedin-brands.svg" alt="LinkedIn" /></a>
+          <a href="#"><img src="svgs/email-svgrepo-com.svg" alt="Email" /></a>
         </div>
-    
-        <div class="footer-bottom">
-          <div class="footer-p">
-            <p class="gray">© All rights reserved.</p>
-          </div>
-          <ul class="footer-links">
-            <li><a class="gray" href="#">Home</a></li>
-            <li><a class="gray" href="#">About us</a></li>
-            <li><a class="gray" href="#">Contact</a></li>
-          </ul>
+      </div>
+
+      <div class="footer-hr"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-p">
+          <p class="gray">© All rights reserved.</p>
         </div>
-      </footer>
-    
-      
+        <ul class="footer-links">
+          <li><a class="gray" href="#">Home</a></li>
+          <li><a class="gray" href="#">About us</a></li>
+          <li><a class="gray" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
     <script src="app.js"></script>
     <!-- <script src="https://kit.fontawesome.com/0dfa026cfb.js" crossorigin="anonymous"></script> -->
   </body>

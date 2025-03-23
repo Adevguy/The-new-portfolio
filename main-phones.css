@@ -1,10 +1,144 @@
+
+
 @media (max-width: 910px) {
+  :root {
+    --background: #707070;
+    --icon-color: white;
+    --width: 60px;
+    --height: 60px;
+    --border-radius: 100%;
+  }
+
+  .wrapper {
+    overflow: visible !important;
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper .fab {
+    background: var(--background);
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    z-index: 3;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fab-animation-reverse 0.4s ease-out forwards;
+  }
+
+  .wrapper .fab::before,
+  .wrapper .fab::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background: var(--icon-color);
+  }
+
+  .wrapper .fab::before {
+    width: 6px;
+    height: 22px;
+  }
+
+  .wrapper .fab::after {
+    width: 22px;
+    height: 6px;
+  }
+
+  .wrapper .fac {
+    width: 50px;
+    height: 160px;
+    border-radius: 50px;
+    position: absolute;
+    background: var(--background);
+    z-index: 2;
+    padding: 0.9rem 0.7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 0.2s ease-in, top 0.2s ease-in;
+  }
+
+  .wrapper .fac a {
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.9;
+    transition: 0.2s;
+  }
+
+  .wrapper .fac a:hover {
+    opacity: 1;
+    color: #e6e6e6;
+  }
+
+  .wrapper input {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .wrapper input:checked ~ .fab {
+    animation: fab-animation 0.4s ease-out forwards;
+  }
+
+  .wrapper input:checked ~ .fac {
+    width: 50px;
+    height: 160px;
+    animation: fac-animation 0.4s ease-out forwards 0.1s;
+    top: 90px;
+    opacity: 1;
+  }
+
+  @keyframes fab-animation {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    100% {
+      transform: rotate(45deg) scale(0.95);
+    }
+  }
+
+  @keyframes fab-animation-reverse {
+    0% {
+      transform: rotate(45deg) scale(0.95);
+    }
+    100% {
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  @keyframes fac-animation {
+    0% {
+      transform: scale(0.95, 1.05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
   .skills {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
   }
-
+  * {
+    overflow-x: hidden;
+  }
   .skills-header > p:nth-of-type(1) {
     font-size: 32px;
     margin-left: 20px;
@@ -23,7 +157,7 @@
   }
 
   .card {
-    min-width: 300px; 
+    min-width: 300px;
     min-height: 350px;
     margin-top: 30px;
     padding: 12px 20px;
@@ -45,7 +179,7 @@
   }
 
   .card-tech {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
@@ -76,10 +210,10 @@
 
   .tech-icons {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 8px;        
+    flex-wrap: wrap;
+    gap: 8px;
   }
-  
+
   .tech {
     display: flex;
     align-items: center;
@@ -91,13 +225,13 @@
     justify-content: center;
   }
 
-  .contact-container{
+  .contact-container {
     flex-direction: column;
-    .form-text{
+    .form-text {
       margin-bottom: 40px;
       letter-spacing: 2px !important;
     }
-    input{
+    input {
       width: 300px;
     }
   }
@@ -178,8 +312,23 @@
     max-width: 100%;
   }
   .logo {
-    margin-bottom: 100px;
+    width: 300px;
+    position: absolute;
+    left: -40px;
   }
+  .left-header {
+    padding: 0;
+  }
+  .logo-container {
+    display: flex;
+    position: static;
+    justify-content: flex-end;
+    padding: 100px 50px;
+    align-items: center;
+    overflow: visible !important;
+
+  }
+
   nav {
     display: none;
   }
@@ -202,10 +351,9 @@
   }
   footer {
     overflow-x: hidden;
-
   }
-  .footer-text > h2{
-    font-size:2rem;
+  .footer-text > h2 {
+    font-size: 2rem;
   }
   .line {
     width: 20%;
@@ -321,5 +469,4 @@
     height: 100%;
     background: white;
   }
-
 }

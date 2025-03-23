@@ -10,7 +10,6 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  overflow-x: hidden;
 }
 
 body,
@@ -32,10 +31,7 @@ nav > a:last-child {
   border: 1px solid white;
   padding: 5px 20px;
 }
-.logo {
-  font-size: xx-large;
-  margin-bottom: 20vh;
-}
+
 
 header {
   width: 100%;
@@ -67,6 +63,17 @@ header > div {
 .main-text > p {
   font-size: 4vh;
 }
+.wrapper {
+  display: none;
+}
+.logo {
+  width: 300px;
+}
+.logo-container {
+  position: relative;
+  left: -50px;
+  top: -90px;
+}
 .devdou {
   font-size: 10vh !important;
 }
@@ -81,13 +88,16 @@ header > div {
   background-color: transparent;
   margin-right: 20px;
   cursor: pointer;
+  transition: 0.3s ease all;
   min-width: 30%;
 }
 .button-group > button:first-of-type {
   color: black;
   background-color: white;
 }
-
+.button-group > button:hover {
+  transform: scale(1.1);
+}
 .hori-line {
   margin: 30px 0;
 }
@@ -599,9 +609,7 @@ footer{
   nav {
     font-size: 2rem;
   }
-  .logo {
-    font-size: 4rem;
-  }
+
   .header-footer {
     font-size: 2rem;
   }
@@ -666,5 +674,8 @@ footer{
   .card-tech-box img {
     width: 45px;
     height: 45px;
+  }
+  .logo {
+    width: 350px;
   }
 }
