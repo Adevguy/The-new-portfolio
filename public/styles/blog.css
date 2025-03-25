@@ -1,0 +1,146 @@
+body {
+  background: #0c0c0c;
+  color: white;
+  font-family: "Inter";
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  width: 275px;
+  height: 275px;
+}
+.portfolio > a {
+  position: relative;
+  top:-50px;
+  border: 2px solid black;
+  background-color: white;
+  width: 50%;
+  color: black;
+  border-radius: 15px;
+  padding: 10px 15px;
+  text-align: center;
+}
+.container {
+  margin-top: 50px;
+  margin-left: 115px;
+}
+#title {
+  font-size: 35px;
+}
+#title2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+#title3 {
+  color: gray;
+  margin-bottom: 50px;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(39, 39, 39);
+  margin-bottom: 30px;
+  max-width: 1250px;
+  margin-right: 50px;
+}
+
+.post {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 100px;
+  h1 {
+    font-size: 30px;
+    width: 650px;
+    font-weight: 500;
+  }
+  p {
+    color: gray;
+  }
+}
+.date {
+  color: gray;
+  min-width: 200px;
+}
+footer {
+  margin-top: 50px;
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-hr {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: #525252;
+}
+.footer-text {
+  h2 {
+    font-size: 3rem;
+    font-weight: 500 !important;
+  }
+}
+@media (max-width: 910px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #title {
+    font-size: 28px;
+  }
+
+  #title2 {
+    font-size: 24px;
+  }
+
+  .post {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .post h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .date {
+    min-width: auto;
+    font-size: 14px;
+  }
+
+  .post-info p {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 18px;
+  }
+  hr {
+    width: 300px;
+  }
+  footer {
+    overflow-x: hidden;
+  }
+  .footer-text > h2 {
+    font-size: 2rem;
+  }
+}

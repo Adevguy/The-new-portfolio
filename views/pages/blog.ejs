@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDou's Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/blog.css" />
+  </head>
+  <body>
+    <div class="portfolio">
+      <img src="/svgs/DEVDOU.png" alt="DevDou img" class="logo" />
+      <a href="/">Home page</a>
+    </div>
+    <div class="container">
+      <h1 id="title">DevDou's Blog</h1>
+      <h2 id="title2">Latest</h2>
+      <p id="title3">Our random posts</p>
+
+      <div class="posts">
+        <hr />
+        <%for(let blog of blogs) {%>
+        <div class="post">
+          <div class="date"><p><%=blog.createdAt%></p></div>
+          <div class="post-info">
+            <h1><%=blog.header%></h1>
+            <p><%=blog.content%></p>
+          </div>
+        </div>
+        <div class="hr">
+          <hr />
+        </div>
+
+        <%}%>
+      </div>
+    </div>
+    <%-include("footer")%>
+  </body>
+</html>

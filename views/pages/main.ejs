@@ -9,11 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="main-phones.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/main-phones.css" />
     <title>DevDou portfolio</title>
   </head>
   <body>
+   
     <header>
       <div class="left-header">
         <div class="logo-container">
@@ -28,12 +29,13 @@
             <input type="checkbox" id="fab-toggle" />
             <label class="fab" for="fab-toggle"></label>
             <div class="fac">
-              <a href="#"> About </a>
-              <a href="#"> Blog </a>
+              <a href="/aboutus"> About </a>
+              <a href="/blog"> Blog </a>
               <a href="#contact"> Contact </a>
             </div>
           </div>
         </div>
+          <%-include("flash")%>
         <div class="main-text">
           <p>Hello there,<br />we are</p>
           <p class="devdou"><strong>DevDou</strong></p>
@@ -48,21 +50,21 @@
           <div>
             <p>let's connect!</p>
             <div class="line"></div>
-            <a href="#"
+            <a href="https://github.com/Adevguy"
               ><img
                 class="icon scaleUp"
                 src="svgs/github-brands.svg"
                 alt="icon"
               />
             </a>
-            <a href="#"
+            <a href="https://eg.linkedin.com/in/dev-dou-93a19b345"
               ><img
                 class="icon scaleUp"
                 src="svgs/linkedin-brands.svg"
                 alt="icon"
               />
             </a>
-            <a href="#"
+            <a href="#contact"
               ><img
                 class="icon scaleUp"
                 src="svgs/envelope-solid.svg"
@@ -74,9 +76,8 @@
       </div>
       <div class="right-header">
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Blog</a>
-          <a href="#">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/contactus">About</a>
           <a href="#contact" class="scaleUp">Contact</a>
         </nav>
         <div class="header-lines">
@@ -311,52 +312,26 @@
           </h2>
         </div>
       </div>
-      <div class="contact-form" id="contact">
+      <form class="contact-form needs-validation" method="post" action="/contact-us" novalidate id="contact">
         <h2 class="form-text">Send us a message!</h2>
         <div class="form-container">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email address" />
-          <input type="text" placeholder="Your message" id="message" />
-          <button id="contact-button" class="scaleUp" style="cursor: pointer">
+          <input type="text" name="username" id="name" placeholder="Name" />
+          <small class="error-message"></small>
+      
+          <input type="email" name="email" id="email" placeholder="Email address" />
+          <small class="error-message"></small>
+      
+          <textarea name="message" id="message"  placeholder="Your message"></textarea>
+          <small class="error-message"></small>
+      
+          <button type="submit" id="contact-button" class="scaleUp" style="cursor: pointer">
             Send message
           </button>
         </div>
-      </div>
+      </form>
     </div>
     <hr />
-    <footer>
-      <div class="footer-content">
-        <div class="footer-text">
-          <h2>DevDou</h2>
-        </div>
-        <div class="social-icons">
-          <a href="#"
-            ><img class="scaleUp" src="svgs/github-brands.svg" alt="GitHub"
-          /></a>
-          <a href="#"
-            ><img class="scaleUp" src="svgs/linkedin-brands.svg" alt="LinkedIn"
-          /></a>
-          <a href="#"
-            ><img class="scaleUp" src="svgs/email-svgrepo-com.svg" alt="Email"
-          /></a>
-        </div>
-      </div>
-
-      <div class="footer-hr"></div>
-
-      <div class="footer-bottom">
-        <div class="footer-p">
-          <p class="gray">© All rights reserved.</p>
-        </div>
-        <ul class="footer-links">
-          <li><a class="gray scaleUp" href="#">Home</a></li>
-          <li><a class="gray scaleUp" href="#">About us</a></li>
-          <li><a class="gray scaleUp" href="#">Contact</a></li>
-        </ul>
-      </div>
-    </footer>
-
-    <script src="app.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/0dfa026cfb.js" crossorigin="anonymous"></script> -->
+    <%-include("footer")%>
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
