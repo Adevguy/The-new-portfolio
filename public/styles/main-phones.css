@@ -196,9 +196,7 @@
     grid-template-columns: 1fr;
   }
 
-  .work-image {
-    height: 150px;
-  }
+  
 
   .work-title {
     font-size: 20px;
