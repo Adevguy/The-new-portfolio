@@ -432,6 +432,7 @@ header > div {
   border-radius: 15px;
   overflow: hidden;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
 }
 
