@@ -214,6 +214,7 @@ header > div {
   padding: 5px 30px;
   margin-top: 20px;
   cursor: pointer;
+  width: 30%;
   border-radius: 50px;
   background-color: white;
 }
