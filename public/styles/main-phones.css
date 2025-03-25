@@ -222,7 +222,9 @@
     border-radius: 6px;
     justify-content: center;
   }
-
+  .scaleUp-work:hover {
+    transform: scale(1);
+  }
   .contact-container {
     flex-direction: column;
     .form-text {

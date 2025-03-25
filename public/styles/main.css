@@ -94,10 +94,12 @@ header > div {
   color: black;
   background-color: white;
 }
-.scaleUp {
+.scaleUp, .scaleUp-work {
   transition: 0.3s ease all;
 }
-.scaleUp:hover {
+
+
+.scaleUp:hover,.scaleUp-work:hover {
   transform: scale(1.1);
 }
 .hori-line {
