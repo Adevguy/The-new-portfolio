@@ -133,7 +133,8 @@
   }
   .skills {
     align-items: center;
-    margin-top: 100px;
+    margin-top: 250px;
+    padding-top: 0px;
     margin-bottom: 100px;
   }
   * {
@@ -196,7 +197,9 @@
     grid-template-columns: 1fr;
   }
 
-  
+  .work-card {
+    cursor: default;
+  }
 
   .work-title {
     font-size: 20px;
