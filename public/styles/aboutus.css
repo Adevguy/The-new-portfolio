@@ -26,7 +26,7 @@ body {
   top:-50px;
   border: 2px solid black;
   background-color: white;
-  width: 50%;
+  width: 20%;
   color: black;
   border-radius: 15px;
   padding: 10px 15px;
@@ -141,6 +141,9 @@ footer {
   .line {
     width: 20%;
     margin: 0 2px;
+  }
+  .portfolio > a{
+    width: 50%;
   }
   .header-footer > div {
     display: flex;

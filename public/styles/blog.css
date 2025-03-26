@@ -20,11 +20,12 @@ body {
   top:-50px;
   border: 2px solid black;
   background-color: white;
-  width: 50%;
+  width:20%;
   color: black;
   border-radius: 15px;
   padding: 10px 15px;
   text-align: center;
+  font-size: 1.6rem;
 }
 .container {
   margin-top: 50px;
@@ -129,7 +130,9 @@ footer {
   .post-info p {
     font-size: 16px;
   }
-
+  .portfolio > a{
+    width: 50%;
+  }
   .nav-links {
     gap: 20px;
     font-size: 18px;
