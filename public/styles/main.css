@@ -391,7 +391,7 @@ header > div {
 
 .work-image {
   width: 100%;
-  height: 800px;
+  object-fit: cover;
 }
 
 .work-info {
