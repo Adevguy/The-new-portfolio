@@ -346,54 +346,6 @@ header > div {
   min-width: 130px;
   padding: 8px 10px;
 }
-.html {
-  border: 2px solid orange;
-}
-
-.css {
-  border: 2px solid blue;
-}
-
-.javascript {
-  border: 2px solid yellow;
-}
-
-.react {
-  border: 2px solid cyan;
-}
-
-.bootstrap {
-  border: 2px solid purple;
-}
-
-.nodejs {
-  border: 2px solid green;
-}
-
-.mongodb {
-  border: 2px solid lightgreen;
-}
-
-.express {
-  border: 2px solid gray;
-}
-
-.socketio {
-  border: 2px solid white;
-}
-
-.github {
-  border: 2px solid white;
-}
-
-.figma {
-  border: 2px solid red;
-}
-
-.webflow {
-  border: 2px solid blue;
-}
-
 .card-tech-box img {
   width: 30px;
   height: 30px;
